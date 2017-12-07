@@ -1,0 +1,31 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  node: true
+  mocha: true
+  mongo: true
+globals:
+  app: false
+  process: false
+  logger: false
+extends: 'eslint:recommended'
+parserOptions:
+  sourceType: module
+  ecmaVersion: 8
+  ecmaFeatures:
+    spread: true
+    experimentalObjectRestSpread: true
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always

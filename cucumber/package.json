@@ -1,0 +1,24 @@
+{
+  "name": "webe2e-cucumber",
+  "version": "1.0.0",
+  "description": "Cucumber example",
+  "main": "index.js",
+  "scripts": {
+    "clean": "mkdir -p test/report && touch cucumber_report.json",
+    "test": "npm run clean && ./node_modules/.bin/cucumber.js ./features/ -f json:test/report/cucumber_report.json",
+    "report": "AUTHOR=teerapong SERVER=dev node report.js && http-server test/report/cucumber_report.html"
+  },
+  "author": "Teerapong Singthong",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^3.1.0",
+    "cucumber-html-reporter": "^3.0.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "selenium-webdriver": "^3.6.0"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
