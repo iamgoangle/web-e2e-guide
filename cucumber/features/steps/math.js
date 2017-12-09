@@ -1,18 +1,18 @@
 const defineSupportCode = require('cucumber').defineSupportCode;
 const expect = require('chai').expect;
 
-defineSupportCode(function({ Given, Then, When }) {
+defineSupportCode(({ Given, Then, When }) => {
   let answer = 0;
 
-  Given('I start with {int}', function (input) {
+  Given('I start with {int}', input => {
     answer = input;
   });
 
-  When('I add {int}', function (input) {
+  When('I add {int}', input => {
     answer = answer + input;
   });
 
-  Then('I end up with {int}', function (input) {
+  Then('I end up with {int}', input => {
     expect(answer).to.eql(input);
   });
 });

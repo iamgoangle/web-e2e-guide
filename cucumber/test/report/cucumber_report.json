@@ -25,7 +25,8 @@
               "location": "features/steps/math.js:7"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -49,8 +50,7 @@
               "location": "features/steps/math.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -72,8 +72,7 @@
               "location": "features/steps/math.js:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -98,6 +97,91 @@
             },
             "result": {
               "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  As a Software Engineer\n  I want create automation script to test on Google chrome browser",
+    "keyword": "Feature",
+    "name": "Chrome",
+    "line": 1,
+    "id": "chrome",
+    "tags": [],
+    "uri": "features/02_google_chrome_simple.feature",
+    "elements": [
+      {
+        "id": "chrome;open-chrome-web-browser",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "open chrome web browser",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have url \"google.co.th\" to open",
+            "match": {
+              "location": "features/support/step_definition.js:12"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I have keyword \"teerapong singthong\" to \"q\" for element",
+            "match": {
+              "location": "features/support/step_definition.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "open the browser",
+            "match": {
+              "location": "features/support/step_definition.js:21"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "click \"btnG\" button",
+            "match": {
+              "location": "features/support/step_definition.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the page title should \"teerapong singthong - Google Search\"",
+            "match": {
+              "location": "features/support/step_definition.js:29"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2,
+              "error_message": "AssertionError: expected { Object (description_, fn) } to deeply equal 'test'\n    at CustomWorld.<anonymous> (/Users/goangle/Labs/web-e2e-guide/cucumber/features/support/step_definition.js:31:37)"
             }
           }
         ]
