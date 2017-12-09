@@ -17,21 +17,16 @@ Repository are includes the testing tools ie. cucumber, selenium web driver, rob
 
 # Table of Contents
   - [Cucumber simple](#cucumber)
-  - [Cucumber with Webdriver I/O]
+  - [Cucumber with Webdriver I/O](#cucumber-with-webdriver-io)
   - [RobotFramework](#robotframework)
   - [Nightwatch.js](#nightwatch)
 # Cucumber :shower:
-**Features:**
- - Gherkin syntax
- - Selenium web driver
- - Chai expect
- - Javascript for step definition
 
 ## Installation
 ```sh
 yarn install
 ```
-## Usage
+## Run test
 ```sh
 yarn test
 ```
@@ -39,15 +34,40 @@ yarn test
 ```sh
 yarn report
 ```
+---
 
 # Cucumber with Webdriver I/O
+BDD with Gherkin syntax and using WebdriverIO for on top selenium web driver.
 
-# Refs
+## Installation
+```
+yarn install
+```
+## Usage
+1. Write your feature file as a Gherkin syntax like below.
+```
+Feature: Test the page title
+    As a developer
+    I want to be able to test if a page has a certain title
+
+    Scenario: Test "Google"
+        Given I open the url "https://google.co.th/"
+        And   the page url is "https://www.google.co.th/"
+        Then  I expect that the title is "Google"
+
+```
+2. Add your step definition to `given.js` `when.js` and `then.js`
+
+## Run test
+```
+yarn test
+```
+## Refs
 [http://webdriver.io/guide/testrunner/frameworks.html](http://webdriver.io/guide/testrunner/frameworks.html)
-[https://github.com/webdriverio/cucumber-boilerplate](https://github.com/webdriverio/cucumber-boilerplate)
-[https://github.com/webdriverio/wdio-cucumber-framework](https://github.com/webdriverio/wdio-cucumber-framework)
 
-# Robotframework :hatched_chick:
+---
+
+# Robotframework :hatched_chick: [Updating]
 ## Install dependencies
 ### Mac
 ```sh
@@ -57,3 +77,5 @@ sudo -H pip install --pre --upgrade robotframework-seleniumlibrary
 brew install chromedriver
 ```
 ### Window
+---
+# Nightwatch.js [Updating]
