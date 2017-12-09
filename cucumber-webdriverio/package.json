@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "wdio": "./node_modules/.bin/wdio config",
-    "test": "npm run clean && ./node_modules/.bin/wdio wdio.conf.js",
+    "test": "wdio wdio.BUILD.conf.js",
     "clean": "rm -rf test && mkdir -p test/report",
     "report": "AUTHOR=teerapong SERVER=dev node report.js && http-server test/report/cucumber_report.html"
   },
@@ -35,6 +35,7 @@
     "wdio-webpack-service": "^1.0.1"
   },
   "dependencies": {
+    "babel-register": "^6.26.0",
     "http-server": "^0.10.0",
     "selenium-standalone": "^6.12.0",
     "webdriver": "^5.0.0-rc1",

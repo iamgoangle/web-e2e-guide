@@ -1,9 +1,10 @@
 const { defineSupportCode } = require('cucumber');
-const webdriverio = require('webdriverio');
-const expect = require('chai').expect;
+
+const openWebsite = require('../support/openWebsite');
+const checkUrl = require('../support/checkUrl');
 
 defineSupportCode(({ Given }) => {
-  Given("I have url {string} to open", url => {
-    browser.url(url);
-  });
+  Given(/^I open the (url|site) "([^"]*)?"$/, openWebsite);
+
+  Given(/^the page url is( not)* "([^"]*)?"$/, checkUrl);
 });

@@ -1,7 +1,8 @@
-Feature: Title check
-  As a Software Engineer
-  I want create automation script to test on Google chrome browser
-  
-  Scenario: Get the page title
-    Given I have url "google.co.th" to open
-    Then  the page title should "Google"
+Feature: Test the page title
+    As a developer
+    I want to be able to test if a page has a certain title
+
+    Scenario: Test "Google"
+        Given I open the url "https://google.co.th/"
+        And   the page url is "https://www.google.co.th/"
+        Then  I expect that the title is "Google"
