@@ -50,7 +50,8 @@
               "location": "features/steps/math.js:15"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           }
         ]
@@ -84,7 +85,8 @@
               "location": "features/steps/math.js:11"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -129,7 +131,8 @@
               "location": "features/support/step_definition.js:12"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -142,7 +145,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3
+              "duration": 1
             }
           },
           {
@@ -154,7 +157,8 @@
               "location": "features/support/step_definition.js:21"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -166,8 +170,7 @@
               "location": "features/support/step_definition.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -180,8 +183,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2,
-              "error_message": "AssertionError: expected { Object (description_, fn) } to deeply equal 'test'\n    at CustomWorld.<anonymous> (/Users/goangle/Labs/web-e2e-guide/cucumber/features/support/step_definition.js:31:37)"
+              "duration": 4341,
+              "error_message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name=\"q\"]\"}\n  (Session info: chrome=62.0.3202.94)\n  (Driver info: chromedriver=2.33.506106 (8a06c39c4582fbfbab6966dbb1c38a9173bfb1a2),platform=Mac OS X 10.12.6 x86_64)\n    at Object.checkLegacyResponse (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at doSend.then.response (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)\nFrom: Task: WebDriver.findElement(By(css selector, *[name=\"q\"]))\n    at thenableWebDriverProxy.schedule (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at thenableWebDriverProxy.findElement (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:1014:17)\n    at CustomWorld.Given (/Users/goangle/Labs/web-e2e-guide/cucumber/features/support/step_definition.js:18:19)\nFrom: Task: WebElement.sendKeys()\n    at thenableWebDriverProxy.schedule (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElementPromise.schedule_ (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElementPromise.sendKeys (/Users/goangle/Labs/web-e2e-guide/cucumber/node_modules/selenium-webdriver/lib/webdriver.js:2174:19)\n    at CustomWorld.Given (/Users/goangle/Labs/web-e2e-guide/cucumber/features/support/step_definition.js:18:45)"
             }
           }
         ]

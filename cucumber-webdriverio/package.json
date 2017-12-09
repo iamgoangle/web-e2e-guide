@@ -1,0 +1,43 @@
+{
+  "name": "webe2e-cucumber",
+  "version": "1.0.0",
+  "description": "Cucumber example",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "./node_modules/.bin/wdio config",
+    "test": "npm run clean && ./node_modules/.bin/wdio wdio.conf.js",
+    "clean": "rm -rf test && mkdir -p test/report",
+    "report": "AUTHOR=teerapong SERVER=dev node report.js && http-server test/report/cucumber_report.html"
+  },
+  "author": "Teerapong Singthong",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^3.1.0",
+    "cucumber-html-reporter": "^3.0.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "wdio-appium-service": "^0.2.3",
+    "wdio-browserstack-service": "^0.1.13",
+    "wdio-chromedriver-service": "^0.1.1",
+    "wdio-cucumber-framework": "^1.0.2",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-firefox-profile-service": "^0.1.0",
+    "wdio-json-reporter": "^0.3.1",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-sauce-service": "^0.4.4",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.3",
+    "wdio-static-server-service": "^1.0.1",
+    "wdio-testingbot-service": "^0.1.7",
+    "wdio-visual-regression-service": "^0.8.0",
+    "wdio-webpack-dev-server-service": "^1.1.0",
+    "wdio-webpack-service": "^1.0.1"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "selenium-standalone": "^6.12.0",
+    "webdriver": "^5.0.0-rc1",
+    "webdriverio": "^4.9.11"
+  }
+}

@@ -16,7 +16,8 @@
     "cucumber-html-reporter": "^3.0.4",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
-    "selenium-webdriver": "^3.6.0"
+    "selenium-webdriver": "^3.6.0",
+    "wdio-cucumber-framework": "^1.0.2"
   },
   "dependencies": {
     "http-server": "^0.10.0",
